@@ -1,0 +1,262 @@
+:root {
+  --main-black-color: #111111;
+  --main-white-color: #ffffff;
+  --accent-color: #fd9222;
+  --main-background-color: #e9e9e9;
+  --secondary-background-color: #1e1823;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--main-background-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* HEADER */
+
+.header-logo {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+  color: var(--main-black-color);
+}
+
+.header-logo span {
+  font-style: italic;
+}
+
+.header-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: var(--main-black-color);
+}
+
+/* HERO */
+
+/* HERE WILL BE BACKGROUND IMAGE INSTEAD OF BACKGROUND-COLOR BLACK*/
+
+.hero {
+  background-color: burlywood;
+}
+
+.hero-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+  color: var(--main-white-color);
+}
+
+.hero-button {
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: var(--main-white-color);
+  cursor: pointer;
+}
+
+.hero-link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: var(--main-white-color);
+}
+
+.hero-scroll {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.03em;
+  color: var(--main-white-color);
+}
+
+/* MAIN */
+
+/* SECTION BENEFITS */
+
+.benefit {
+  background-color: var(--secondary-background-color);
+}
+
+.benefit-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--main-white-color);
+}
+
+.benefit-text {
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* SECTION TASTE */
+
+.taste-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--main-black-color);
+}
+
+.taste-title span {
+  color: var(--accent-color);
+}
+
+.taste-text {
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: var(--main-black-color);
+}
+
+.taste-subtitle {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--main-black-color);
+}
+
+.taste-subtitle.light {
+  color: var(--main-white-color);
+}
+
+.taste-subtitle.dark {
+  color: var(--main-black-color);
+}
+
+/* SECTION PRODUCTION */
+
+.production-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--main-black-color);
+}
+
+.production-title-part {
+  color: var(--accent-color);
+}
+
+.production-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  color: var(--main-black-color);
+}
+
+.production-desc {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: var(--main-black-color);
+}
+
+/* SECTION REVIEWS */
+
+.reviews-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--main-black-color);
+}
+
+.reviews-title span {
+  color: var(--accent-color);
+}
+
+.reviews-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+  color: var(--main-black-color);
+}
+
+.reviews-text {
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.review-button {
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid var(--accent-color);
+  border-radius: 100px;
+  background-color: (var(--main-background-color));
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--main-black-color);
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: var(--secondary-background-color);
+}
+
+.footer-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: var(--main-white-color);
+}
+
+.footer span {
+  color: var(--accent-color);
+}
+
+.footer-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: var(--main-white-color);
+}
+
+.address-link {
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: var(--main-white-color);
+  font-style: normal;
+}
+
+.footer-nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: var(--main-white-color);
+}

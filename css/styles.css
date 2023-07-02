@@ -58,6 +58,19 @@ input {
   padding-right: 20px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /*--------------------------- HEADER ---------------------*/
 
 .header-section {
@@ -113,6 +126,7 @@ input {
   padding: 0;
   background-color: transparent;
   margin-left: auto;
+  line-height: 0;
 }
 
 .mobile-close-btn {
@@ -217,12 +231,6 @@ input {
   margin-bottom: 32px;
 }
 
-/* .hero-buttons {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-} */
-
 .hero-btn {
   padding: 12px 28px;
   background-color: #fd9222;
@@ -302,4 +310,51 @@ input {
 .hero-scroll-icon {
   fill: #fd9222;
   transition: fill var(--transition);
+}
+
+/*--------------------------- BENEFITS ---------------------*/
+
+.benefits {
+  background-color: var(--dark-background-color);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.benefits-icon-wrap {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+}
+
+.benefits-item {
+  position: relative;
+}
+
+.benefits-item:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.benefits-icon {
+  fill: var(--accent-color);
+}
+
+.benefits-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+  color: var(--main-white-text-color);
+  margin-bottom: 18px;
+}
+
+.benefits-text {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: -0.02em;
+  max-width: 308px;
 }

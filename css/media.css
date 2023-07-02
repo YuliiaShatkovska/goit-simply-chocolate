@@ -117,11 +117,28 @@
   .hero-link {
     padding: 14px 40px;
   }
+
+  /*--------------------------- BENEFITS ---------------------*/
+
+  .benefits {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .benefits-list {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+
+  .benefits-item {
+    width: calc((100% - 32px) / 2);
+  }
 }
 
-@media screen and (min-width: 1136px) {
+@media screen and (min-width: 1166px) {
   .container {
-    max-width: 1200px;
+    max-width: 1166px;
   }
 
   /*--------------------------- HEADER ---------------------*/
@@ -153,5 +170,35 @@
         ),
         url(../images/hero-back-desk2x.jpg);
     }
+  }
+
+  /*--------------------------- BENEFITS ---------------------*/
+
+  .benefits-container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .benefits-list {
+    gap: 88px;
+    flex-wrap: nowrap;
+
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .benefits-item {
+    width: calc((100% - 176px) / 3);
+  }
+
+  .benefits-item::after {
+    content: "";
+    position: absolute;
+    right: -18px;
+    top: 60px;
+    height: 124px;
+    width: 1px;
+    background-color: #ffffff;
+    display: block;
   }
 }

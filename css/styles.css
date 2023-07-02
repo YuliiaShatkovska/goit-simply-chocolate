@@ -111,7 +111,7 @@ input {
 }
 
 .mobile-open-icon {
-  stroke: currentColor;
+  stroke: #111111;
 }
 
 .mobile-close-icon {
@@ -357,4 +357,142 @@ input {
   line-height: normal;
   letter-spacing: -0.02em;
   max-width: 308px;
+}
+
+/*--------------------------- TASTE ---------------------*/
+
+.taste {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.taste-container {
+}
+.taste-title {
+  color: var(--main-black-text-color);
+  text-align: center;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  max-width: 283px;
+}
+
+.taste-title span {
+  color: var(--accent-color);
+}
+.taste-text {
+  color: var(--main-black-text-color);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  margin-bottom: 32px;
+  margin: 0 auto;
+}
+.taste-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.taste-item {
+  border-radius: 15px;
+  padding: 28px 30px 28px 30px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.taste-item img {
+  margin: 0 auto;
+}
+
+.taste-item:first-child {
+  background-color: var(--accent-color);
+}
+
+.taste-item:nth-child(even) {
+  border: 1px solid var(--accent-color);
+}
+
+.taste-item:nth-child(3) {
+  background-color: #1e1823;
+}
+
+.taste-subtitle {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  margin-top: 25px;
+}
+
+.taste-subtitle.light {
+  color: var(--main-white-text-color);
+}
+
+.taste-subtitle.dark {
+  color: var(--main-black-text-color);
+}
+
+.taste-cover-block {
+  border-radius: 15px;
+  background-color: var(--light-background-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 28px;
+  transform: translateY(100%);
+
+  transition: transform var(--transition);
+}
+
+.taste-item:hover .taste-cover-block,
+.taste-item:focus .taste-cover-block {
+  transform: translateY(0);
+}
+
+.cover-block-title {
+  color: var(--main-black-text-color);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.cover-block-text {
+  color: var(--main-black-text-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  margin-top: 14px;
+}
+
+.cover-block-btn {
+  color: var(--main-white-text-color);
+  font-size: 10px;
+  line-height: 1.2;
+  border-radius: 35px;
+  background-color: var(--accent-color);
+  padding: 6px 16px;
+  margin-right: 6px;
+}
+
+.cover-block-benefits-btn {
+  color: var(--main-black-text-color);
+  font-size: 10px;
+  line-height: 1.2;
+  background-color: var(--light-background-color);
+  border-radius: 35px;
+  border: 1px solid var(--accent-color);
+  padding: 6px 16px;
 }

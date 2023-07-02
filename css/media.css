@@ -1,9 +1,21 @@
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .hero-btn {
+    padding: 10px 20px;
+  }
+
+  .hero-link {
+    padding: 10px 20px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
   }
+
+  /*--------------------------- HEADER ---------------------*/
 
   .mobile-open-btn {
     display: none;
@@ -39,6 +51,12 @@
     letter-spacing: -0.02em;
     padding-top: 28px;
     padding-bottom: 36px;
+    transition: color var(--transition);
+  }
+
+  .header-link:hover,
+  .header-link:focus {
+    color: var(--accent-color);
   }
 
   .header-soc-list {
@@ -46,11 +64,58 @@
     gap: 18px;
   }
 
-  .header-soc-link {
+  .header-soc-link:hover .header-soc-icon,
+  .header-soc-link:focus .header-soc-icon {
+    fill: var(--accent-color);
   }
 
   .header-soc-icon {
     fill: #111111;
+    transition: fill var(--transition);
+  }
+
+  /*--------------------------- HERO ---------------------*/
+
+  .hero-container {
+    padding: 671px 40px 40px 40px;
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(../images/hero-back-tab1x.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-container {
+      background-image: linear-gradient(
+          180deg,
+          rgba(17, 17, 17, 0) 0%,
+          rgba(17, 17, 17, 0.4) 100%
+        ),
+        url(../images/hero-back-tab2x.jpg);
+    }
+  }
+
+  .hero-title {
+    font-size: 28px;
+    width: 484px;
+  }
+
+  .hero-buttons {
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-scroll {
+    margin-top: unset;
+    margin-left: auto;
+  }
+
+  .hero-btn,
+  .hero-link {
+    padding: 14px 40px;
   }
 }
 
@@ -59,8 +124,34 @@
     max-width: 1200px;
   }
 
+  /*--------------------------- HEADER ---------------------*/
+
   .header-list {
     margin-left: auto;
     margin-right: 90px;
+  }
+
+  /*--------------------------- HERO ---------------------*/
+
+  .hero-container {
+    padding: 380px 40px 40px 40px;
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(../images/hero-back-desk1x.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-container {
+      background-image: linear-gradient(
+          180deg,
+          rgba(17, 17, 17, 0) 0%,
+          rgba(17, 17, 17, 0.4) 100%
+        ),
+        url(../images/hero-back-desk2x.jpg);
+    }
   }
 }

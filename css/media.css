@@ -164,6 +164,31 @@
   .taste-item {
     width: calc((100% - 32px) / 2);
   }
+
+  /*--------------------------- MADE ---------------------*/
+
+  .made-container {
+    padding-left: 77px;
+    padding-right: 77px;
+  }
+
+  .made-title {
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+
+  .made-text-wrap {
+    padding: 32px;
+  }
+
+  .made-text {
+    margin-bottom: 28px;
+    max-width: 350px;
+  }
+
+  .made-item-text {
+    max-width: 464px;
+  }
 }
 
 @media screen and (min-width: 1166px) {
@@ -246,5 +271,22 @@
 
   .taste-item {
     width: calc((100% - 57px) / 4);
+  }
+
+  /*--------------------------- MADE ---------------------*/
+
+  .made-container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .made-wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  .made-text-wrap {
+    margin-top: unset;
+    margin-left: 20px;
   }
 }

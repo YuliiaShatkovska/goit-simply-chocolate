@@ -9,7 +9,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: var(--main-background-color);
+  background-color: var(--light-background-color);
   line-height: 0.29;
   font-size: 14px;
 }
@@ -495,4 +495,71 @@ input {
   border-radius: 35px;
   border: 1px solid var(--accent-color);
   padding: 6px 16px;
+}
+
+/*--------------------------- MADE ---------------------*/
+
+.made {
+  padding-bottom: 60px;
+}
+
+.made-container {
+}
+.made-title {
+  color: var(--main-black-text-color);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.made-title span {
+  color: var(--accent-color);
+}
+
+.made-text-wrap {
+  margin-top: 20px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  padding: 20px 14px;
+}
+
+.made-text {
+  color: var(--main-black-text-color);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+  margin-bottom: 20px;
+}
+.made-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding-left: 16px;
+}
+.made-item {
+  position: relative;
+}
+
+.made-item-text {
+  color: var(--main-black-text-color);
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  max-width: 291px;
+}
+
+.made-item::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid #eceded;
+  width: 8px;
+  height: 8px;
+  background-color: #4c4c4c;
+  top: 5px;
+  left: -16px;
 }

@@ -10,6 +10,16 @@
   .taste-cover-block {
     padding: 10px;
   }
+
+  .footer-input {
+    padding: 5px 8px;
+    width: 180px;
+  }
+
+  .footer-form-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -231,6 +241,53 @@
     padding: 14px 40px;
     font-size: 18px;
   }
+
+  /*--------------------------- FOOTER ---------------------*/
+
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .footer-title {
+    font-size: 28px;
+    max-width: 300px;
+  }
+
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    margin-bottom: 24px;
+  }
+
+  .footer-nav-list {
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .footer-nav-link.hide {
+    display: none;
+  }
+
+  .footer-bottom {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+
+  .footer-form {
+    margin-top: unset;
+  }
+
+  .footer-input {
+    padding: 14px 24px;
+    width: 233px;
+  }
+
+  .footer-form-btn {
+    padding: 14px 28px;
+  }
 }
 
 @media screen and (min-width: 1166px) {
@@ -346,5 +403,23 @@
   .loved-item {
     width: calc((100% - 56px) / 3);
     padding: 56px 24px 24px 24px;
+  }
+
+  /*--------------------------- FOOTER ---------------------*/
+
+  .footer-nav-list {
+    gap: 24px;
+  }
+
+  .footer-bottom {
+    justify-content: space-between;
+  }
+
+  .footer-input {
+    width: 313px;
+  }
+
+  .footer-form-btn {
+    padding: 17px 32px;
   }
 }
